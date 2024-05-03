@@ -11,6 +11,6 @@ with open('input9.txt', 'r') as f:
         h.append(line.strip())
     h1 = h[1::2]
     with open('output9.txt', 'w') as f1:
-       print('\n'.join(h1), file=f1)
+       f1.write('\n'.join(h1))
 
 os.replace('output9.txt', 'simple/output9.txt')
